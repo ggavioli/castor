@@ -26,3 +26,36 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+Developpement sous environnement Windows
+http://railsinstaller.org/fr-FR 
+Faire l’installation à la racine du C:\
+
+Dans le dossier Rubyxxxxcréer un dossier DevKit
+
+Téléchargerle Development Kitun peu plus bas sur la page, en prenant le soinde bien prendre la version qui va avec votre ruby.
+
+Installer dans le dossier DevKit.
+
+Ouvrir une fenêtre dos et ce positionner à l’intérieur du dossier devKit
+
+Lancer cette suite de commande
+
+ruby dk.rb init
+
+ruby dk.rb install
+
+Test Installation
+
+gem install json --platform=ruby
+
+ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"
+
+Sortir du dossier devKit
+
+Se positionner dans le dossier ruby et dans le terminal cmd lancer
+
+Gem install rails(c'est long à installer il faut être patient, possibilité de faire l'install sans la doc avec -no--ri -no--doc 
+Pour info à ceux qui sont sous windows pour visualiser son site il faut:
+
+in your /app/views/layouts/application.html.erb line 5 and 6, change the first parameter application to default
+version actuel2.5.0
